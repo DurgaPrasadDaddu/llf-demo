@@ -276,7 +276,7 @@ const services = [
   {
     title: "Consultation",
     desc: "Expert guidance to help clients plan and develop their outdoor or indoor green spaces effectively.",
-    image: "/Images/consultation.jfif",
+    image: "/Images/consultation.png",
   },
   {
     title: "Maintenance",

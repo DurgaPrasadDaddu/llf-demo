@@ -193,12 +193,12 @@ export default function Testimonials() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/Images/nature3.jpg"
+          src="/Images/test1.jpeg"
           alt="Background"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black"></div>
       </div>
 
       <div className="relative max-w-4xl mx-auto text-center text-white">
@@ -257,7 +257,7 @@ export default function Testimonials() {
                   src={item.image}
                   alt={item.name}
                   fill
-                  className="object-cover"
+                  className="object-center"
                 />
               </div>
             ))}

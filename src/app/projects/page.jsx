@@ -1,9 +1,10 @@
 import Navbar from '@/components/SharedComponents/Navbar'
 import PageBanner from '@/components/SharedComponents/PageBanner'
-import ServicesSection from '@/components/Home/ServicesSection'
+import ProjectsSection from '@/components/Home/ProjectsSection'
 import Testimonials from '@/components/Home/Testimonials'
 import Footer from '@/components/SharedComponents/Footer'
 import { generateSEO } from "@/lib/seo";
+
 
 export const metadata = generateSEO({
   title: "Landscaping Projects Portfolio | Commercial & Residential Gardens",
@@ -21,7 +22,7 @@ const ProjectsPage = () => {
         title="OUR PROJECTS"
         description="We create elegant landscapes that blend nature, design, and harmony."
       />
-      <ServicesSection/>
+      <ProjectsSection/>
       <Testimonials/>
       <Footer/>
     </div>
