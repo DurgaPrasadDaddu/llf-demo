@@ -1,6 +1,8 @@
 "use client";
 
-import { MessageCircle, Download } from "lucide-react";
+import {  Download } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function FloatingActions() {
   return (
@@ -30,12 +32,12 @@ export default function FloatingActions() {
           hover:scale-110
         "
       >
-        <Download size={22} />
+        <Download size={32} />
       </a>
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919642482728?text=Hello%20Leaf-Loam,%20I%20am%20interested%20in%20your%20landscaping%20services."
+        href="https://wa.me/918247779436?text=Hello%20Leaf-Loam,%20I%20am%20interested%20in%20your%20landscaping%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="
@@ -50,9 +52,9 @@ export default function FloatingActions() {
           hover:scale-110
         "
       >
-        <MessageCircle size={26} />
+        <FaWhatsapp  size={26} />
 
-        {/* Pulse Effect */}
+        
         <span className="absolute inset-0 rounded-full bg-green-500/40 animate-ping -z-10"></span>
       </a>
     </div>

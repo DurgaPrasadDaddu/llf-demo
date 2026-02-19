@@ -21,7 +21,6 @@ export default function Home() {
       <ContactSection/>
       <VillaHero/>
       <Footer/>
-      {/* <Others/> */}
     </div>
   );
 }

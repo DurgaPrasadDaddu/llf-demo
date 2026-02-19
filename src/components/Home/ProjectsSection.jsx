@@ -8,19 +8,19 @@ const testimonials = [
     name: "Nayana",
     company: "Nayana Info Solutions, Bengaluru",
     text: "A tranquil garden oasis perfect for your relaxation time with family or alone within your comfortable home.",
-    image: "/Images/nature1.webp",
+    image: "/Images/p4.webp",
   },
   {
     name: "Prasad Veera",
     company: "GreenNest, Rajamundry",
     text: "Modern landscaping blended beautifully with natural textures and greenery.",
-    image: "/Images/nature2.jpeg",
+    image: "/Images/p2.webp",
   },
   {
     name: "Leela",
     company: "Pionner Info Solutions, Hyderabad",
     text: "Elegant outdoor living space designed with harmony and balance.",
-    image: "/Images/nature3.jpg",
+    image: "/Images/p3.jpg",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
                 src={testimonials[current].image}
                 alt={testimonials[current].name}
                 fill
-                className="object-cover transition-all duration-700"
+                className="object-center"
               />
             </div>
 

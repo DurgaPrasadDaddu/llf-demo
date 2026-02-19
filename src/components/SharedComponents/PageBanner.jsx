@@ -24,7 +24,7 @@ export default function PageBanner({
           alt="Page Background"
           fill
           priority
-          className="object-cover object-center"
+          className="object-center"
         />
 
         {/* Dark Gradient Overlay */}
@@ -61,7 +61,7 @@ export default function PageBanner({
         </div>
 
         {/* Bottom-Left Social Container */}
-        <div
+        {/* <div
           className="
           absolute bottom-0 left-0 
           bg-white 
@@ -101,6 +101,61 @@ export default function PageBanner({
                 <Icon size={16} className="hidden sm:block" />
               </a>
             ))}
+          </div>
+        </div> */}
+        <div
+          className="
+                  absolute bottom-0 left-0 
+                  bg-white 
+                  px-4 sm:px-6 
+                  py-3 sm:py-4 
+                  rounded-tr-3xl
+                  z-20
+                "
+        >
+          <div className="flex items-center gap-3 sm:gap-4">
+            {SOCIAL_LINKS.map(({ Icon, href, type }, index) => {
+              let brandStyle = "";
+
+              if (type === "linkedin") {
+                brandStyle = "bg-[#0A66C2] text-white border-[#0A66C2]";
+              }
+
+              if (type === "facebook") {
+                brandStyle = "bg-[#1877F2] text-white border-[#1877F2]";
+              }
+
+              if (type === "website") {
+                brandStyle = "bg-black text-white border-black";
+              }
+
+              if (type === "instagram") {
+                brandStyle =
+                  "bg-gradient-to-b from-[#405DE6] via-[#E1306C] to-[#FCAF45] text-white border-transparent";
+              }
+
+              return (
+                <a
+                  key={index}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`
+                            w-10 h-10 sm:w-11 sm:h-11
+                            flex items-center justify-center
+                            rounded-full
+                            border
+                            ${brandStyle}
+        
+                            transition-all duration-500 ease-out
+                            hover:scale-110
+                            hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)]
+                          `}
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

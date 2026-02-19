@@ -36,7 +36,7 @@ export default function AboutHero() {
                   px-7 py-3 rounded-full 
                   font-medium items-center gap-2
                   transition-all duration-300
-                  hover:bg-green-800
+                  hover:bg-[#1B3A2E]
                   hover:shadow-lg
                   hover:shadow-green-900/20
                   hover:scale-[1.03]
@@ -51,7 +51,7 @@ export default function AboutHero() {
         </div>
 
         {/* ================= RIGHT SIDE ================= */}
-        <div className="lg:w-[60%] text-left">
+        <div className="lg:w-[60%] text-center">
 
           <h1
             className="

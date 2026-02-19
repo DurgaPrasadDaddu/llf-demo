@@ -49,7 +49,7 @@ export default function IntroductionPage() {
         {/* RIGHT IMAGE */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg">
           <Image
-            src="/Images/nature2.jpeg"  // replace with your image
+            src="/Images/a1.jpg"  
             alt="Landscaping Project"
             fill
             className="object-cover"

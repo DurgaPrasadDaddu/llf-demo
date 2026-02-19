@@ -276,12 +276,12 @@ const services = [
   {
     title: "Consultation",
     desc: "Expert guidance to help clients plan and develop their outdoor or indoor green spaces effectively.",
-    image: "/Images/consultation1.jpg",
+    image: "/Images/consultation.jfif",
   },
   {
     title: "Maintenance",
     desc: "Regular care and upkeep of gardens and green spaces to keep them healthy and visually appealing.",
-    image: "/Images/Maintenance.jpeg",
+    image: "/Images/maintainence.jpeg",
   },
 ];
 

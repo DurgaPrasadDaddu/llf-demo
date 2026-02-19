@@ -41,7 +41,7 @@ export default function Hero() {
             text-2xl sm:text-2xl md:text-3xl lg:text-6xl xl:text-[90px]
           "
           >
-            {COMPANY.heroTitle.split(" ").slice(0, 2).join(" ")} <br /> 
+            {COMPANY.heroTitle.split(" ").slice(0, 2).join(" ")} <br />
             {COMPANY.heroTitle.split(" ").slice(2).join(" ")}
           </h1>
 
@@ -58,7 +58,7 @@ export default function Hero() {
         </div>
 
         {/* Attached Bottom-Left Social Container */}
-        <div
+        {/* <div
           className="
           absolute bottom-0 left-0 
           bg-white 
@@ -107,6 +107,125 @@ export default function Hero() {
                 <Icon size={16} className="hidden sm:block" />
               </a>
             ))}
+          </div>
+        </div> */}
+        {/* <div
+        className="
+          absolute bottom-0 left-0 
+          bg-white 
+          px-4 sm:px-6 
+          py-3 sm:py-4 
+          rounded-tr-3xl
+          z-20
+        "
+      >
+        <div className="flex items-center gap-3 sm:gap-4">
+          {SOCIAL_LINKS.map(({ Icon, href, type }, index) => {
+            
+            let brandHover = "";
+
+            if (type === "linkedin") {
+              brandHover =
+                "hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2]";
+            }
+
+            if (type === "facebook") {
+              brandHover =
+                "hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]";
+            }
+
+            if (type === "website") {
+              brandHover =
+                "hover:bg-black hover:text-white hover:border-black";
+            }
+
+            if (type === "instagram") {
+              brandHover =
+                "hover:bg-gradient-to-r hover:from-[#405DE6] hover:via-[#E1306C] hover:to-[#FCAF45] hover:text-white hover:border-transparent";
+            }
+
+            return (
+              <a
+                key={index}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`
+                  w-10 h-10 sm:w-11 sm:h-11
+                  flex items-center justify-center
+                  rounded-full
+
+                  bg-black/15
+                  backdrop-blur-md
+                  border border-black/10
+
+                  text-gray-700
+                  transition-all duration-500 ease-out
+
+                  hover:scale-110
+                  hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)]
+                  ${brandHover}
+                `}
+              >
+                <Icon size={16} />
+              </a>
+            );
+          })}
+        </div>
+        </div> */}
+        <div
+          className="
+          absolute bottom-0 left-0 
+          bg-white 
+          px-4 sm:px-6 
+          py-3 sm:py-4 
+          rounded-tr-3xl
+          z-20
+        "
+        >
+          <div className="flex items-center gap-3 sm:gap-4">
+            {SOCIAL_LINKS.map(({ Icon, href, type }, index) => {
+              let brandStyle = "";
+
+              if (type === "linkedin") {
+                brandStyle = "bg-[#0A66C2] text-white border-[#0A66C2]";
+              }
+
+              if (type === "facebook") {
+                brandStyle = "bg-[#1877F2] text-white border-[#1877F2]";
+              }
+
+              if (type === "website") {
+                brandStyle = "bg-black text-white border-black";
+              }
+
+              if (type === "instagram") {
+                brandStyle =
+                  "bg-gradient-to-b from-[#405DE6] via-[#E1306C] to-[#FCAF45] text-white border-transparent";
+              }
+
+              return (
+                <a
+                  key={index}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`
+                    w-10 h-10 sm:w-11 sm:h-11
+                    flex items-center justify-center
+                    rounded-full
+                    border
+                    ${brandStyle}
+
+                    transition-all duration-500 ease-out
+                    hover:scale-110
+                    hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)]
+                  `}
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
