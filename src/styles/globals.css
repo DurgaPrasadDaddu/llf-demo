@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Apply Body Font */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Apply Heading Font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
