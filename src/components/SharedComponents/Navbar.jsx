@@ -117,8 +117,8 @@ const Navbar = () => {
 
       {/* ================= MOBILE & TABLET ================= */}
       <div className="lg:hidden px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-md bg-white/10 rounded-full px-4 sm:px-6 py-3 border border-white/20 shadow-lg">
+        <div className=" max-w-7xl mx-auto">
+          <div className="backdrop-blur-md bg-white/10  px-4 sm:px-6 py-3 border border-white/20 shadow-lg">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex flex-col items-center">
               <Image
@@ -134,7 +134,7 @@ const Navbar = () => {
                   transition-all duration-300
                 "
               />
-            </Link>
+              </Link>
               {/* <div className="text-white text-lg sm:text-xl font-bold">
                 Leaf-Loam
               </div> */}

@@ -15,7 +15,7 @@ const Footer = () => {
 
           <div className="relative max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* LEFT SIDE */}
-            <div>
+            <div className="flex flex-col items-center">
               <Link href="/" className="flex flex-col items-center">
               <Image
                 src="/Images/logo1.png"

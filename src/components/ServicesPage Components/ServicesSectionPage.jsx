@@ -70,7 +70,7 @@ const services = [
       "Layout Planning",
       "Budget Guidance",
     ],
-    image: "/Images/consultation1.jpg",
+    image: "/Images/consultation.png",
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ const services = [
       "Lawn Maintenance",
       "Seasonal Support",
     ],
-    image: "/Images/Maintenance.jpeg",
+    image: "/Images/maintainence.jpeg",
   },
 ];
   return (
