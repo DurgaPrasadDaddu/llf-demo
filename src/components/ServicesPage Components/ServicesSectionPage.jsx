@@ -85,6 +85,19 @@ const services = [
     ],
     image: "/Images/maintainence.jpeg",
   },
+  {
+  id: 7,
+  title: "Corporate Gift Planting",
+  description:
+    "Eco-conscious corporate gifting solutions that combine sustainability with meaningful brand impact through curated plant experiences.",
+  points: [
+    "Customized Plant Hampers",
+    "Branded Eco Packaging",
+    "Bulk Corporate Orders",
+    "Pan-India Delivery Support",
+  ],
+  image: "/Images/CPG.webp",
+}
 ];
   return (
     <section className="w-full bg-gray-50 pt-8 px-6 md:px-16 lg:px-24">

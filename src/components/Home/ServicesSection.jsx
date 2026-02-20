@@ -283,6 +283,11 @@ const services = [
     desc: "Regular care and upkeep of gardens and green spaces to keep them healthy and visually appealing.",
     image: "/Images/maintainence.jpeg",
   },
+  {
+  title: "Corporate Gift Planting",
+  desc: "Sustainable corporate gifting solutions featuring premium plants and eco-friendly packaging, designed to strengthen business relationships while promoting a greener future.",
+  image: "/Images/CPG1.webp",
+},
 ];
 
 export default function ServicesSection() {
