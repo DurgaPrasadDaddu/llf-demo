@@ -2,6 +2,7 @@
 import { COMPANY, SOCIAL_LINKS } from "@/lib/constants";
 import Link from "next/link";
 import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -15,9 +16,21 @@ const Footer = () => {
           <div className="relative max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* LEFT SIDE */}
             <div>
-              <h2 className="text-xl sm:text-3xl font-bold mb-4 leading-snug">
-                Leaf-Loam
-              </h2>
+              <Link href="/" className="flex flex-col items-center">
+              <Image
+                src="/Images/logo1.png"
+                alt="Leaf-Loam Landscaping Services"
+                width={300}
+                height={100}
+                priority
+                className="
+                  h-20 sm:h-20 md:h-22 lg:h-24 xl:h-26
+                  w-auto
+                  object-contain mb-2
+                  transition-all duration-300
+                "
+              />
+            </Link>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 leading-snug">
                 Safe, Fast & Reliable
                 <br />

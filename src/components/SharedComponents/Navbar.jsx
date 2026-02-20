@@ -29,31 +29,36 @@ const Navbar = () => {
     <header
       className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-gradient-to-r from-green-500/50 to-green-500/20 backdrop-blur-2xl border border-green-300/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]"
+          ? "bg-gradient-to-r from-gray-800/40 to-gray-500/20 backdrop-blur-2xl py-2 shadow-[0_8px_32px_0_rgba(0,0,0,0.25)]"
           : "bg-transparent top-3 sm:top-4 md:top-5"
       }`}
     >
       {/* ================= DESKTOP & LAPTOP ================= */}
       <div className="hidden lg:block">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between py-3 md:py-4">
+          <div className="flex items-center justify-between">
             {/* Logo */}
-            {/* <Link href="/" className="flex items-center">
+            <Link href="/" className="flex flex-col items-center">
               <Image
-                src="/Images/logo.png"
+                src="/Images/logo1.png"
                 alt="Leaf-Loam Landscaping Services"
-                width={260}
-                height={60}
+                width={300}
+                height={100}
                 priority
-                className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                className="
+                  h-14 sm:h-16 md:h-18 lg:h-22 xl:h-22
+                  w-auto
+                  object-contain
+                  transition-all duration-300
+                "
               />
-            </Link> */}
-            <Link
+            </Link>
+            {/* <Link
               href="/"
               className="text-2xl md:text-3xl font-semibold tracking-wide text-white whitespace-nowrap"
             >
               Leaf-Loam
-            </Link>
+            </Link> */}
 
             {/* Center Navigation */}
             <nav className="flex items-center overflow-x-auto scrollbar-hide">
@@ -115,18 +120,24 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto">
           <div className="backdrop-blur-md bg-white/10 rounded-full px-4 sm:px-6 py-3 border border-white/20 shadow-lg">
             <div className="flex items-center justify-between">
-              {/* <Link href="/">
-                <Image
-                  src="/Images/logo.png"
-                  alt="Leaf-Loam"
-                  width={140}
-                  height={50}
-                  className="h-9 sm:h-10 w-auto object-contain"
-                />
-              </Link> */}
-              <div className="text-white text-lg sm:text-xl font-bold">
+              <Link href="/" className="flex flex-col items-center">
+              <Image
+                src="/Images/logo1.png"
+                alt="Leaf-Loam Landscaping Services"
+                width={300}
+                height={100}
+                priority
+                className="
+                  h-8 sm:h-10 md:h-12
+                  w-auto
+                  object-contain
+                  transition-all duration-300
+                "
+              />
+            </Link>
+              {/* <div className="text-white text-lg sm:text-xl font-bold">
                 Leaf-Loam
-              </div>
+              </div> */}
               <button
                 className="text-white"
                 onClick={() => setMobileOpen(!mobileOpen)}

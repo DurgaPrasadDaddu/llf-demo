@@ -14,7 +14,7 @@ export default function IntroductionPage() {
           </h2>
 
           <p className="text-gray-600 leading-relaxed mb-6">
-            At <span className="font-semibold text-gray-800">Leaf & Loam Landscaping</span>, 
+            At <span className="font-bold text-[#1B3A2E]">Leaf & Loam Landscaping</span>, 
             we craft outdoor environments that blend beauty, sustainability, 
             and functionality. From private gardens and terraces to large 
             commercial landscapes, we design spaces that inspire and thrive.
@@ -33,7 +33,7 @@ export default function IntroductionPage() {
 
           <p className="text-gray-600 leading-relaxed mb-6">
             Founded with a passion for transforming outdoor spaces, 
-            Leaf & Loam began as a small team dedicated to thoughtful 
+            <span className="font-bold text-[#1B3A2E]">Leaf & Loam Landscaping</span>, began as a small team dedicated to thoughtful 
             landscape design. Over time, we expanded our services to include 
             irrigation systems, plant care plans, rooftop gardens, and 
             maintenance solutions.

@@ -23,7 +23,7 @@ export default function AboutHero() {
 
             <div>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                At Leaf & Loam, we believe landscapes are more than decorative surroundings. <br />
+                At <span className="font-bold text-[#1B3A2E]">Leaf & Loam Landscaping</span>,we believe landscapes are more than decorative surroundings. <br />
                 They are living ecosystems — extensions of architecture, emotion, and human experience. <br />
                 Headquartered in Hyderabad and executing projects across India, we specialize in full-scale landscape design, planning, and development for residential, commercial, industrial, and institutional spaces.
               </p>

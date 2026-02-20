@@ -24,7 +24,7 @@ export default function PageBanner({
           alt="Page Background"
           fill
           priority
-          className="object-center"
+          className=" object-cover object-center"
         />
 
         {/* Dark Gradient Overlay */}
