@@ -116,7 +116,7 @@ const Navbar = () => {
       </div>
 
       {/* ================= MOBILE & TABLET ================= */}
-      {/* <div className="lg:hidden px-4 sm:px-6">
+      <div className="lg:hidden px-4 sm:px-6">
         <div className=" max-w-7xl mx-auto">
           <div className="backdrop-blur-md bg-white/10  px-4 sm:px-6 py-3 border border-white/20 shadow-lg">
             <div className="flex items-center justify-between">
@@ -168,77 +168,8 @@ const Navbar = () => {
             </div>
           )}
         </div>
-      </div> */}
-      {/* ================= MOBILE & TABLET ================= */}
-      <div className="lg:hidden px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto relative">
-
-          {/* Fixed Height Navbar */}
-          <div className="relative h-16 backdrop-blur-md bg-white/10 px-4 sm:px-6 border border-white/20 shadow-lg rounded-xl overflow-visible">
-            
-            {/* Centered Content */}
-            <div className="flex items-center justify-between h-full">
-              
-              {/* Logo Wrapper (Absolute - does NOT affect navbar height) */}
-              <Link
-                href="/"
-                className="absolute left-1/2 -translate-x-1/2 -top-3"
-              >
-                <Image
-                  src="/Images/logo1.png"
-                  alt="Leaf-Loam Landscaping Services"
-                  width={300}
-                  height={100}
-                  priority
-                  className="
-                    h-16 sm:h-20
-                    w-auto
-                    object-contain
-                    drop-shadow-xl
-                    transition-all duration-300
-                  "
-                />
-              </Link>
-
-              {/* Empty div for spacing left */}
-              <div className="w-8" />
-
-              {/* Menu Button */}
-              <button
-                className="text-white z-20"
-                onClick={() => setMobileOpen(!mobileOpen)}
-              >
-                {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Dropdown */}
-          {mobileOpen && (
-            <div className="mt-6 backdrop-blur-md bg-white/10 rounded-3xl border border-white/20 p-5 sm:p-6 shadow-xl">
-              <div className="flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-white hover:text-green-300 transition text-sm sm:text-base"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-
-                <Link
-                  href="/contact"
-                  className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition hover:scale-105"
-                >
-                  START YOUR GARDEN
-                </Link>
-              </div>
-            </div>
-          )}
-        </div>
       </div>
+    
     </header>
   );
 };
