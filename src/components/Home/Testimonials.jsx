@@ -297,7 +297,7 @@ const testimonials = [
     company: "Nayana Info Solutions",
     text: "The team transformed our backyard into a breathtaking green sanctuary. Their attention to detail and passion for nature truly exceeded expectations.",
     image: "/Images/nayana.png",
-    satisfaction: 90,
+    satisfaction: 95,
   },
   {
     name: "Prasad Veera",
@@ -305,7 +305,7 @@ const testimonials = [
     company: "GreenNest",
     text: "From concept to completion, the landscaping was handled with absolute professionalism. The blend of greenery, lighting, and stone elements created a peaceful retreat we now enjoy every day.",
     image: "/Images/prasad.png",
-    satisfaction: 85,
+    satisfaction: 90,
   },
   {
     name: "Leela",
@@ -321,7 +321,7 @@ const testimonials = [
     company: "Chakra Trding Impex ",
     text: "What impressed us most was their creativity and execution. The outdoor space now reflects sophistication, balance, and a true connection with nature.",
     image: "/Images/chandu.png",
-    satisfaction: 80,
+    satisfaction: 90,
   },
   {
     name: "Surya",
