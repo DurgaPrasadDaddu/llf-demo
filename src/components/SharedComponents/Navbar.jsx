@@ -128,7 +128,7 @@ const Navbar = () => {
                 height={100}
                 priority
                 className="
-                  h-8 sm:h-10 md:h-12
+                  h-18 sm:h-18 md:h-18
                   w-auto
                   object-contain
                   transition-all duration-300
